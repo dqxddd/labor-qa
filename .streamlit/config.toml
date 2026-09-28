@@ -1,0 +1,19 @@
+# Streamlit 主题。CSS 能改的样式都在 frontend/theme.py 里，
+# 但滑块、单选这些原生控件只认这里的 primaryColor，所以单独放一份配置。
+[theme]
+primaryColor = "#1F5AD9"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8F9FB"
+textColor = "#161A21"
+font = "sans serif"
+
+[server]
+headless = true
+
+# toolbarMode = "minimal" 会把右上角的 Deploy 按钮和三点菜单收掉，
+# 顶栏我们自己画了一条，不需要它
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
